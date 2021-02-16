@@ -1,0 +1,14 @@
+.owl-item { width: 370px; }
+.pricing-item-title { padding-left: 65px; }
+@media (min-width:1200px) {
+	/*.container { max-width: 95%; }*/
+}
+.white{color:#fff;}
+.fs-2{font-size:1.2rem;}
+
+a.top-phone:link,
+a.top-phone:visited,
+a.top-phone:hover,
+a.top-phone:active{font-size:1rem; color:#fff;}
+ul.top-icons{list-style: none;display: inline-block;margin-left:15px;}
+ul.top-icons li{display: inline-block;margin-left:15px;}

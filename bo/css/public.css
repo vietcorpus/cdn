@@ -1,0 +1,12 @@
+html,body{margin:0; padding:0;}
+.footer{text-align: right; color:#6a737b;padding-right:20px;margin:20px 0 50px 0;}
+a.takefancy:link,
+a.takefancy:visited,
+a.takefancy:hover,
+a.takefancy:active{text-decoration: none;color:#8e43e7;}
+.title{font-size:2rem;text-align: center;color:#8e43e7;}
+.description{color:#52565e; padding:5px 15px;font-size:1.1rem;}
+.print-title{font-size:2em;text-align: center;color:#8e43e7; text-transform: uppercase;}
+#qrcode img{display: block;margin:0 auto;}
+.scan-description{text-transform: uppercase;font-weight: 600;font-size: 1.25rem;text-align: center;}
+.print-wrapper{width:450px;}

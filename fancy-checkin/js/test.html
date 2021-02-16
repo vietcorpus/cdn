@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Signature Pad demo</title>
+</head>
+
+<body>
+    <canvas></canvas>
+    <script src="./signature.js"></script>
+    <script>
+    setTimeout(function() {
+        var canvas = document.querySelector('canvas');
+        var signaturePad = new SignaturePad(canvas, {
+            minWidth: 1,
+            maxWidth: 5,
+            penColor: '#6a737b'
+        });
+    }, 1000);
+    </script>
+</body>
+
+</html>

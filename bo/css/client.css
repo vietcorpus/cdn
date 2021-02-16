@@ -1,0 +1,475 @@
+html body {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100%;
+	height: 100%;
+	background: #16a085;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+.toshow {
+	display: none;
+}
+
+.home-page {
+	width: 100%;
+	height: 100%;
+	background-color: #16a085;
+	padding: 0 !important;
+	margin: 0 !important;
+	background-image: url('');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.white {
+	color: #fff;
+}
+
+.center {
+	text-align: center;
+}
+
+.checkin-refresh {
+	display: block;
+	margin-top: 90px;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+input:focus:-moz-placeholder {
+	color: transparent;
+}
+
+input:focus::-moz-placeholder {
+	color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+input::-webkit-input-placeholder {
+	color: #fff;
+}
+
+input:-moz-placeholder {
+	color: #fff;
+}
+
+input::-moz-placeholder {
+	color: #fff;
+}
+
+input:-ms-input-placeholder {
+	color: #fff;
+}
+
+label {
+	margin: 0;
+	display: block;
+}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+.container-login {
+	width: 100%;
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.container-login::before {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.wrap-login {
+	width: 450px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 45px 15px 15px 15px;
+	background: #9152f8;
+	background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+	background: -o-linear-gradient(top, #7579ff, #b224ef);
+	background: -moz-linear-gradient(top, #7579ff, #b224ef);
+	background: linear-gradient(top, #7579ff, #b224ef);
+	color: #fff;
+}
+
+/*------------------------------------------------------------------
+[ Form ]*/
+.login-form {
+	width: 100%;
+}
+
+.wrap-input {
+	width: 100%;
+	position: relative;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+	margin-bottom: 30px;
+}
+
+.input {
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.2;
+	display: block;
+	width: 100%;
+	height: 45px;
+	background: transparent;
+	padding: 0 5px 0 38px;
+}
+
+.checkin .input {
+	font-size: 38px;
+}
+
+/*---------------------------------------------*/
+.focus-input {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.focus-input::before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	background: #fff;
+}
+
+.focus-input::after {
+	font-family: Material-Design-Iconic-Font;
+	font-size: 22px;
+	color: #fff;
+	content: attr(data-placeholder);
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 6px;
+	left: 0px;
+	padding-left: 5px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.input:focus {
+	padding-left: 5px;
+}
+
+.input:focus+.focus-input::after {
+	top: -22px;
+	font-size: 18px;
+}
+
+.input:focus+.focus-input::before {
+	width: 100%;
+}
+
+.container-login-form-btn {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.login-form-btn {
+	font-size: 16px;
+	color: #555555;
+	line-height: 1.2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	min-width: 250px;
+	height: 50px;
+	border-radius: 25px;
+	background: #9152f8;
+	position: relative;
+	z-index: 1;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.login-form-btn::before {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	border-radius: 25px;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+@media (max-width:576px) {
+	.wrap-login {
+		padding: 55px 15px 37px 15px;
+	}
+
+}
+
+/*Customize*/
+.login {
+	background: url(../images/city.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*display: flex;*/
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.color-overlay {
+	width: 100%;
+	height: 100%;
+	background: #34bf49;
+	opacity: .4;
+	position: absolute;
+}
+
+/* Keyboard */
+.hg-theme-default {
+	background-color: transparent !important;
+}
+
+.hg-theme-default .hg-button {
+	background-color: transparent !important;
+	border: 1px solid #fff;
+	font-size: 88px;
+}
+
+.numeric-theme {
+	max-width: 390px;
+	margin: 0 auto;
+}
+
+.numeric-theme + .simple-keyboard-preview {
+	max-width: 330px;
+}
+
+.simple-keyboard.hg-theme-default.numeric-theme
+.hg-button.hg-standardBtn.hg-button-at {
+	max-width: none;
+}
+.simple-keyboard > div:nth-child(4) > div:nth-child(3) {
+
+	/*background-color: #00aeff !important;*/
+	/*display: none;*/
+}
+.simple-keyboard > div:nth-child(4) > div:nth-child(1),.simple-keyboard > div:nth-child(4) > div:nth-child(3) {
+
+	/*background-color: #00aeff !important;*/
+	/*display: none;*/
+	font-size: 55px;
+}
+
+/*slider*/
+.operator-slider{
+	border: 2px solid red;
+	margin:0 auto;
+	display: block;
+}
+.operator-slider .promotion-card {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    height:300px;
+}
+
+.promotion-card h2 {
+    color: red;
+}
+
+.slick-slide {
+    height: 330px !important;
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    content: "";
+    display: table;
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+
+[dir="rtl"] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
