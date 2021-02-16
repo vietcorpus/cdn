@@ -162,6 +162,12 @@ tr.canceled i{color:#e4002b!important;}
 .gradient-red{background-image:-webkit-gradient(linear,right bottom,left top,from(#e52e71),to(#ff8a00));background-image:linear-gradient(to bottom,#e52e71,#ff8a00);}
 .marginTop60{margin-top:60px!important;}
 
+
+.mt-50{margin-top:50px!important;}
+.mt-60{margin-top:60px!important;}
+.mt-100{margin-top:100px!important;}
+.mt-150{margin-top:150px!important;}
+
 /*BO*/
 .delete-icon{position:absolute;right:20px;top:33px;}
 .add-icon{float:right;}
